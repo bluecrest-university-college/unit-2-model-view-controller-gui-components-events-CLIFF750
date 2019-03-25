@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD"
+    android:textDivider="ADDITION"
+    android:textSize="40sp"
+    tools:context="com.example.addingtwonumbers.MainActivity">
+
+    <TextView
+        android:id="@+id/Answer"
+        android:layout_width="410dp"
+        android:layout_height="50sp"
+        android:layout_marginTop="490dp"
+        android:background="#F0E68C"
+        android:fontFamily="dancing_script.ttf"
+        android:text="@string/answer"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <divider
+        android:id="@+id/divider"
+        android:layout_width="478dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="67dp"
+        android:background="#ADEDE3"
+        android:divider_textSize="30dp"
+        android:textAlignment="top"
+        app:layout_constraintBottom_toTopOf="@+id/Number1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/Number1"
+        android:layout_width="223dp"
+        android:layout_height="73dp"
+        android:layout_Horizontal="true"
+        android:layout_marginBottom="36dp"
+        android:autofillHints="answer"
+
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/Number2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <EditText
+        android:id="@+id/Number2"
+        android:layout_width="223dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="71dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number1" />
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="410dp"
+        android:layout_height="50sp"
+        android:layout_Horizontal="true"
+        android:layout_marginBottom="282dp"
+        android:background="#EEE8AA"
+        android:fontFamily="dancing_script.ttf"
+        android:text="ADD"
+        android:textAlignment="center"
+        android:textAppearance="40sp"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Number2" />
+
+</android.support.constraint.ConstraintLayout>
